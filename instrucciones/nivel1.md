@@ -104,6 +104,12 @@ Para validar nuestro formulario, vamos a tener  que hacer lo siguiente:
   ```
 
   Para validar que sólo tenga letras, podemos hacer:
+  
+  /^/para que tenga que empezar con esa letra o cadena de letras
+  [A-z]+ para que vengan 1 o mas valores de A a z (toma las mayusculas)
+  $ para que termine cuando se cumple la accion anterior
+  /abc/ es una expresion regular, por eso se puede acceder a ella y utilizar metodos
+  /i es para que haga la vista gorda con las mayusculas y minusculas
 
   `const contieneSoloLetras = /^[A-z]+$/.test(valor);`
 
